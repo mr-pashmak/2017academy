@@ -1,0 +1,45 @@
+.header {
+  display:flex;
+  position: relative;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+  height: 90px;
+  border-bottom: solid 1px black;
+}
+
+.header .lockup{
+  position:relative;
+  color: MediumAquamarine;
+  margin-left: 10px;
+}
+
+.header .logo {
+  width: auto;
+  height: 90px;
+  align-content: center;
+  margin: 10px;
+}
+
+.navigation {
+  display: inline-flex;
+  flex-grow:2;
+  flex-shrink:1;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navigation li{
+  display: inline-flex;
+  margin: 10px 30px;
+}
+
+.navigation a{
+  color: black;
+  text-decoration-style: solid 1px black;
+}
+
+
+.lockup .navigation {
+  align-items: center;
+}
