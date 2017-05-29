@@ -1,6 +1,10 @@
+
+/*
 div{
   border: solid 1px black;
 }
+*/
+
 
 .header {
   display: inline-flex;
@@ -24,14 +28,13 @@ div{
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
-  display: inline-block;
-  flex-wrap:nowrap;
+  display: inline-flex;
+  align-items: center;
 }
 
 .navigation li{
   display: inline-flex;
   margin: 10px 10px;
-  align-items: center;
 }
 
 .navigation a{
@@ -52,6 +55,7 @@ div{
 
 .column .large{
   width: 630px;
+  flex-flow:column;
 }
 
 .column .medium {
@@ -73,31 +77,61 @@ div{
   font-weight: bold;
   font-size: 30px;
   color: white;
+  text-align:center;
 }
 
 .column .large .top h1{
   font-size: 40px;
+  text-align: left;
 }
 
 .large .top {
   background-image: url("../../resources/img-story-main.png");
   min-width: 250px;
   min-height: 250px;
-  display: inline-flex;
 }
 
-.large .secondmiddle {
+
+.large .firstbottom{
   background-image: url("../../resources/img-story-2.png");
   min-height: 250px;
   width: 100%;
   display: inline-flex;
 }
 
-.large .bottom {
+.large .secondbottom {
   background-image: url("../../resources/img-story-3.png");
   min-height: 250px;
   width: 100%;
   display: inline-flex;
+}
+
+.middlerow {
+  display:inline-flex;
+  align-items:center;
+}
+
+.bottomrow{
+  display:inline-flex;
+  align-items:center;
+}
+
+.large .middlerow .firstmiddle {
+  margin: 30px 30px 30px 0;
+}
+
+.large .middlerow .secondmiddle {
+  margin: 30px 0 30px 30px;
+}
+
+.large .bottomrow .firstbottom{
+  justify-content: space-between;
+  margin: 30px 30px 0 0;
+}
+
+.large .bottomrow .secondbottom{
+  justify-content: space-between;
+  margin: 30px 0 0 30px;
 }
 
 .medium .middle {
