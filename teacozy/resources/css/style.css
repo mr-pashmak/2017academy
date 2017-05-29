@@ -1,0 +1,70 @@
+div {
+  border: solid 1px red;
+}
+
+.all{
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+}
+
+/* NAVBAR */
+.navbar {
+  display: inline-flex;
+  width: 100%;
+  height: 69px;
+  position: fixed;
+  background-color: black;
+  z-index: 10;
+  overflow: hidden;
+}
+.navbar .logo img {
+  height: 50px;
+  margin:10px;
+}
+
+.menu {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+.menu li{
+  display:inline-flex;
+  align-items: center;
+  margin: 20px;
+  color: seashell;
+  text-decoration: underline;
+}
+
+.menu a{
+  color:seashell;
+}
+
+/* SECTIONS */
+.sections{
+  padding: 20px;
+  justify-content: center;
+  display: flex;
+}
+
+/* MISSION */
+#mission {
+  display: inline-flex;
+  width: 1200px;
+  height: 700px;
+  margin-top: 50px;
+  background-image: url("../../resources/img-mission-background.jpg");
+  align-items: center;
+}
+
+#mission .copy {
+  justify-content: center;
+  width: 1200px;
+  text-align: center;
+  padding: 5px 0;
+  background-color: black;
+}
