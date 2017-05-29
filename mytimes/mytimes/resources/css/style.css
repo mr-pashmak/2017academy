@@ -1,5 +1,18 @@
+
+/*
 div{
   border: solid 1px black;
+}
+*/
+
+.navbar {
+    display: flex;
+    position: fixed;
+    z-index: 20px
+    height: 100%;
+    top: 0;
+    width: 100%;
+    background-color: white;
 }
 
 .header {
@@ -7,32 +20,44 @@ div{
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
-  border-bottom: solid 1px black;
   align-items: center;
   flex-shrink: 2;
   flex-grow: 1;
   width: 60%;
-  justify-content: space-between;
+  position:fixed;
+  z-index:10;
+  background-color: white;
 }
 
 .header .lockup{
   color: MediumAquamarine;
+  display: inline-flex;
   align-items: center;
-  padding-left: 10px;
+  padding-left: 100px;
+  position:fixed;
+  z-index:5;
 }
 
 .navigation {
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
-  display: inline-block;
-  flex-wrap:nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  position:fixed;
+  z-index:5;
+  background-color:white;
+  width: 100%;
+  border-bottom: solid 1px black;
 }
 
 .navigation li{
   display: inline-flex;
   margin: 10px 10px;
-  align-items: center;
+  background-color:white;
+  justify-content: flex-end;
+  padding-right: 20px;
 }
 
 .navigation a{
@@ -41,21 +66,23 @@ div{
 }
 
 .main{
-  width:auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  margin: 20px;
+  padding-top: 75px;
 }
 
+
+/*all columns*/
 .column{
-  width: 100%;
-  height:auto;
+  padding: 30px 30px 0 0;
   display:flex;
-  padding: 30px 0;
   justify-content: space-between;
 }
 
-
 .column .large{
   width: 630px;
+  flex-flow:column;
 }
 
 .column .medium {
@@ -64,4 +91,155 @@ div{
 
 .column .small {
   width: 240px;
+  flex-direction: column;
+}
+
+.column p{
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+.column h1{
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align:center;
+}
+
+/*column large*/
+.column .large .top h1{
+  font-size: 40px;
+  text-align: left;
+}
+
+.large .top {
+  background-image: url("../../resources/img-story-main.png");
+  min-width: 250px;
+  min-height: 250px;
+  display: flex;
+  align-content: center;
+  padding-left: 20px;
+}
+
+
+.large .firstbottom{
+  background-image: url("../../resources/img-story-2.png");
+  min-height: 250px;
+  width: 100%;
+  align-content: center;
+}
+
+.large .secondbottom {
+  background-image: url("../../resources/img-story-3.png");
+  min-height: 250px;
+  width: 100%;
+  align-content: center;
+}
+
+.middlerow {
+  display:inline-flex;
+  align-items:center;
+}
+
+.large .bottomrow{
+  display:inline-flex;
+  align-content:center;
+}
+
+.secondbottom h1{
+  align-content: center;
+}
+
+.large .middlerow .firstmiddle {
+  margin: 30px 30px 30px 0;
+}
+
+.large .middlerow .secondmiddle {
+  margin: 30px 0 30px 30px;
+}
+
+.large .bottomrow .firstbottom{
+  justify-content: space-between;
+  margin: 30px 30px 0 0;
+}
+
+.large .bottomrow .secondbottom{
+  justify-content: space-between;
+  margin: 30px 0 0 30px;
+}
+
+
+/*column middle*/
+.medium {
+  margin:20px;
+  display: block;
+}
+
+.medium .middle {
+  background-image: url("../../resources/img-story-1.png");
+  height:250px;
+  width: 100%;
+}
+
+.medium .middle h1{
+    display: inline-flex;
+    align-content: center;
+}
+
+/*column small*/
+
+.small .newsbites li{
+  list-style-type: none;
+  border-bottom: solid 1px black;
+  padding: 10px;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+
+}
+
+.small .newsbites h2{
+  font-size: 16px:
+  font-weight: bold;
+  text-align: center;
+}
+
+
+/*footer*/
+.footer{
+  width:100%;
+  height: 300px;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.footer .mytimes {
+  display:inline-flex;
+  align-content: center;
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.footer .links {
+  display: inline-flex;
+}
+
+.footer .links li {
+  list-style-type: none;
+  display: inline;
+  padding: 20px;
+  text-decoration: underline;
+}
+
+.smallcopy {
+  display: block;
 }
