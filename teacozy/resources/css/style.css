@@ -1,143 +1,163 @@
-/* Universal Styles */
 
-body {
-  margin: 0;
-  background-color: black;
-  font-family: "Helvetica", sans-serif;
-  color: seashell;
+
+.all{
+  font-family: Helvetica;
   font-size: 22px;
-  text-align: center;
-}
-
-a {
   color: seashell;
+  background-color: black;
 }
 
-h2,
-h3,
-h4 {
-  padding: 10px;
+html, body {
   margin: 0;
+  padding: 0;
 }
 
-.flex-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-/* Header Section */
-
-header {
-  position: fixed;
-  z-index: 1;
-  align-items: center;
+/* NAVBAR */
+.navbar {
+  display: inline-flex;
   width: 100%;
   height: 69px;
-  border-bottom: 1px solid seashell;
+  position: fixed;
   background-color: black;
+  z-index: 20;
+  overflow: hidden;
+  border-bottom: solid 1px seashell;
 }
 
-header img {
+.navbar .logo img {
   height: 50px;
-  padding-left: 10px;
+  margin:10px;
 }
 
-nav {
-  text-align: right;
-  flex-grow: 1;
-}
-
-nav span {
-  display: inline-block;
-  padding: 20px 10px;
-}
-
-/* Main Section */
-
-.main {
-  padding-top: 69px; /* To offset fixed header */
-  opacity: 0.9;
-  width: 1200px;
-  margin: auto;
-}
-
-/* Mission Section */
-
-#mission {
-  height: 700px;
-  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
-}
-
-#mission .content {
-  margin: auto;
-  background-color: black;
+.menu {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
   width: 100%;
 }
 
-/* Store Section */
+.menu li{
+  display:inline-flex;
+  align-items: center;
+  margin: 20px;
+  color: seashell;
+  text-decoration: underline;
+}
 
-#store {
-  width: 1000px;
+.menu a{
+  color:seashell;
+}
+
+
+/* MISSION */
+#mission {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+#mission .box{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width:1200px;
   height: 700px;
-  padding-top: 70px;
-  margin: auto;
+  background-image: url("../../resources/img-mission-background.jpg");
 }
 
-.item {
-  padding: 5px;
+#mission .copy {
+    background-color: black;
+    width: 100%;
+    margin-top: 300px;
+    padding: 3px 0;
 }
 
-.item img {
-  height: 200px;
-  margin: 10px;
+#mission .copytop {
+  z-index: 10;
+  display: flex;
+  text-align: center;
   display: block;
 }
 
-.item span {
+#mission .copybottom{
   display: block;
-  padding: 5px;
-  font-weight: bold;
+  text-align:center;
+}
+
+
+/*FEATURED TEA*/
+#featured {
+  width: 100%;
+  display: block;
+  align-items: center;
   text-align: center;
 }
 
-/* Location Section */
-
-.flex-container.locations {
-  padding-top: 5px;
-}
-
-#locations {
-  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
-  height: 500px;
-  padding-top: 70px;
-}
-
-#locations .flex-container {
-  margin: auto;
-  width: 1100px;
-}
-
-.location {
-  flex-basis: 280px;
-  display: flex;
-  flex-direction: column;
+.teatable {
+  width: 1000px;
+  height: auto;
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction:row;
   justify-content: center;
-  padding: 10px;
-  margin: 5px 20px;
-  opacity: 1.0;
-  background-color: black;
 }
 
-/* Contact Section */
-
-#contact {
+.teatable img{
+  width: 300px;
   height: 200px;
+  margin: 0 10px;
 }
 
-/* Footer Section */
+.teatable h4{
+  margin-top: 10px;
+}
 
-footer {
+
+/*LOCATION*/
+#location {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#location .picturebox{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width:1200px;
+  height: 500px;
+  background-image: url("../../resources/img-locations-background.jpg");
+}
+
+#location .table{
+  display: flex;
+  justify-content: center;
+}
+
+#downtown, #bayside, #oakdale {
+  width: 300px;
+  margin: 0 20px;
+  line-height: 60px;
+  opacity: 1;
+  background-color: black;
+  padding: 10px 0;
+}
+
+
+/*FOOTER*/
+
+.footer {
+  width: 100%;
+  height: 200px;
+  text-align:center;
+}
+
+/*COPYRIGHT INFO */
+
+.copyright{
+  padding: 20px 0;
   text-align: left;
-  padding-left: 20px;
 }
