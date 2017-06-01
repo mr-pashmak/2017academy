@@ -257,3 +257,89 @@ nav{
   }
 
 }
+
+@media only screen and (max-width: 470px){
+  .header{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .header .name{
+    display: none;
+  }
+
+  .hero{
+    width: 100%;
+    height: 15rem;
+    display: flex;
+  }
+
+  .hero .copy{
+    display: block;
+    width: 100%;
+    height: 4rem;
+    margin-left: 0%;
+    margin-bottom: 0%;
+  }
+
+  .hero .copy h5{
+    font-size: 0.77rem;
+    font-weight: bold;
+  }
+
+  .hero .copy h2{
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .navbar nav{
+    display:flex;
+    color: white;
+    background-color: firebrick;
+    z-index: 10;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .watch{
+    display:none;
+  }
+
+  .gallery{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+  }
+
+  .pen{
+    width: 90%;
+  }
+
+  .info{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .info .location, .info .hours{
+    width: 90%;
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+
+  .footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .copyright{
+    text-align: center;
+  }
+
+}
