@@ -1,9 +1,4 @@
 
-div {
-  border: solid 0.02rem red;
-}
-
-
 html{
   font-size: 18px;
   font-family: Helvetica;
@@ -187,4 +182,23 @@ nav{
 }
 
 
-/* VISITOR INFO*/
+/* FOOTER*/
+
+.footer{
+  width: 100%;
+  background-color: black;
+  height: 5rem;
+  display: flex;
+}
+
+.copyright {
+  width: 960px;
+  display:flex;
+  align-items: center;
+  margin-left: 10%;
+}
+
+.copyright h5{
+  color: white;
+  text-align: left;
+}
