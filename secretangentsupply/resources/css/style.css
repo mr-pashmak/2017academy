@@ -85,6 +85,7 @@ nav{
   color: white;
 }
 
+
 /*GALLERY*/
 
 /*Note: this is for the 960px div to contain the gallery and visitor info*/
@@ -169,7 +170,7 @@ nav{
   margin-bottom: 4rem;
 }
 
-.location{
+.location, .hours{
   width: 35%;
   height: auto;
 }
@@ -201,4 +202,58 @@ nav{
 .copyright h5{
   color: white;
   text-align: left;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (min-width: 1024px){
+  #menu{
+    display:none;
+  }
+}
+
+@media only screen and (max-width: 1024px){
+  .content{
+    margin-left: 0%;
+    width: auto;
+    height: auto;
+  }
+
+  .gallery .product img{
+    display: flex;
+    width: auto;
+  }
+
+  .pen, .watch{
+    width: 47%;
+  }
+
+  .glass {
+    display: none;
+  }
+
+  .location, .hours div{
+    width: 35%;
+    height: auto;
+  }
+
+  .info{
+    display: flex;;
+    justify-content: space-between;
+    width: auto;
+    height: auto;
+    margin-left: 0%;
+  }
+
+  #eyewear, #apparel, #gadgets, #vehicles, #classes, #contact{
+    display:none;
+  }
+
+  #menu{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+  }
+
 }
