@@ -1,8 +1,8 @@
-/*
+
 div {
   border: solid 0.02rem red;
 }
-*/
+
 
 html{
   font-size: 18px;
@@ -91,6 +91,8 @@ nav{
 }
 
 /*GALLERY*/
+
+/*Note: this is for the 960px div to contain the gallery and visitor info*/
 .content{
   margin-left: 10%;
   width: 960px;
@@ -100,58 +102,65 @@ nav{
   margin-top: 3rem;
 }
 
+/*Note: arranges the 3 images*/
 .gallery{
   width: 100%;
   display: inline-flex;
   justify-content:space-between;
 }
 
-.product {
+/*Note: for the div container surrounding img*/
+.pen, .watch, .glass{
   width: 30%;
   height: auto;
   border:4px solid black;
 }
 
-.product img{
+/*Note: for the actual product img*/
+.gallery .product img{
   display: flex;
   width: auto;
   height: 9rem;
   padding: 2rem;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
-.product h5{
+/*Note: to format the text of the product*/
+.gallery h5{
   padding: 0.5rem 0;
   background-color: black;
   color: white;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-.product .pen{
-  justify-content: center;
+/*Note: ensures that height of the product is the same*/
+.product {
+  height: 13rem;
+}
+
+/*Note: to make the pen and watch image center in their divs*/
+.pen .product, .watch .product{
   width: 100%;
   display: flex;
-}
-
-.product .watch{
   justify-content: center;
-  width: 100%;
-  display: flex;
 }
 
-.product .glass{
+/*Note: to make the glasses image center in their divs*/
+.glass .product{
+  display: flex;
   justify-content: center;
-  display: flex;
-  width: 100%;
+  align-items: center;
 }
 
-.product .glass img{
-  width: 30%;
-  height: 100%;
-  display: flex;
+/*Note: to make the image of the glasses smaller*/
+.glass .product img{
+  width: 70%;
+  height: auto;
 }
+
 
 /* VISITOR INFO*/
 
@@ -162,6 +171,7 @@ nav{
   display: flex;
   justify-content: space-between;
   margin-top: 3rem;
+  margin-bottom: 4rem;
 }
 
 .location{
@@ -173,4 +183,8 @@ nav{
   padding: 1rem 2rem;
   color: white;
   background-color: black;
+  margin-bottom: 0.4rem;
 }
+
+
+/* VISITOR INFO*/
